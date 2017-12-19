@@ -4,10 +4,11 @@ library(XML)
 #library(XMLSchema)
 
 gen =
-function(xlFile)
+function(xlFile, ...)
 {
     d = read_excel(xlFile)
-    fillInXML(d)
+    # Drop the first k rows corresponding to the comments.
+    fillInXML(d, ...)
     # Then can saveXML() to a file or POST it to an API.
 }
 
@@ -35,7 +36,8 @@ function(data, name = getData(data, "name", c("Duncan", "Temple Lang")),
     con = getNodeSet(doc, "//Contact")[[1]]
     xmlAttrs(con) = c(email = email)
 
-     # If the provided name
+    # If provided a non-empty name, either in the excel/data.frame
+    # or in the call to fillInXML
     if(length(name)) {
         name = rev(name)
         f = getNodeSet(doc, "//Contact//First")[[1]]
