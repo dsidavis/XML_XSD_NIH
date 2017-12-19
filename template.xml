@@ -16,8 +16,6 @@
   <Action>
     <AddData target_db="">
       <Data content_type="XML">
-        <XmlContent>
-	</XmlContent>
       </Data>
     </AddData>
   </Action>
