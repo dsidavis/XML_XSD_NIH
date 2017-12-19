@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Submission schema_version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/submit/public-docs/common/submission.xsd?view=co">
+  <Description> 
+      <Comment></Comment> 
+      <Organization role="owner" type="institute">
+         <Name>University of California, Davis</Name>
+         <Contact email="">
+            <Name>
+              <First></First>
+              <Last></Last>
+            </Name>
+         </Contact>
+      </Organization>
+    <Hold release_date=""/>
+  </Description>
+  <Action>
+    <AddData target_db="">
+      <Data content_type="XML">
+        <XmlContent>
+	</XmlContent>
+      </Data>
+    </AddData>
+  </Action>
+</Submission>
